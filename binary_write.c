@@ -1,3 +1,15 @@
+/*
+ *
+ * Written by Doug Molineux
+ * 12/10/11
+ *
+ * binary_write.c
+ *
+ * This file will write a binary structure to a file called students.bin
+ * The student structure contains a GPA integer and a string for a student id
+ *
+ */
+
 #include<stdio.h>
 #include<string.h>
 
@@ -29,7 +41,7 @@ int main() {
         // display warning if there was a problem
 		printf("Couldn't access the students file");
 		
-		// return; cannot continue
+		// return; cannot continue; end program
         return 1;
 	}
     
