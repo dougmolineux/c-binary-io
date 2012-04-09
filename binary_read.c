@@ -45,8 +45,10 @@ int main() {
 		
 	}
     
-    // read the student into the structure
-	fread(&jack, sizeof(struct student), 1, studentFile);
+    	// read the student GPA into the structure
+	fread(&jack->gpa, sizeof(int), 1, studentFile);
+	// read the student name into the structure
+	fread(&jack->id, sizeof(char), 50, studentFile);
 	
 	// print to make sure that the student was imported properly
 	printf("%d %s\n", jack.gpa, jack.id);
